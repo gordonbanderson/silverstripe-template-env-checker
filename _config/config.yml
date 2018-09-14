@@ -1,0 +1,7 @@
+---
+Name: template-env-checker
+---
+
+PageController:
+  extensions:
+    - Suilven\Env\TemplateEnvironmentChecker
