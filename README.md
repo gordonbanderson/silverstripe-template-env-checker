@@ -1,8 +1,21 @@
 # Template Environment Checker
 
-```
-
 ## Usage
+In a template, the following methods are available to check the environment
+* `IsDev`
+* `IsTest`
+* `IsLive`
+
+The use case the drove the creation of this module is one of whether to serve individual or compressed assets.
+
+```SilverStripe
+<% if $IsDev %>
+<!-- serve individual CSS files -->
+<% else %>
+<!-- serve compressed concatenated CSS file -->
+<% end %>
+
+```
 
 ## Issues
 
