@@ -16,7 +16,6 @@ class ConfigurationGetter extends Extension
 {
     public function ConfigValue($classname, $propertyName)
     {
-        echo '**** Called config method ****';
         return Config::inst()->get($classname, $propertyName);
     }
 }
